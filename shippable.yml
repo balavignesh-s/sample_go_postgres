@@ -1,3 +1,4 @@
+build_image: u12gol:prod
 language: go
 
 go:
