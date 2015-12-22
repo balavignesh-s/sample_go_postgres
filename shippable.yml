@@ -30,7 +30,7 @@ before_install:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
-  - psql -c 'CREATE DATABASE test;' -U postgres
+  - /usr/bin/psql -c 'CREATE DATABASE test;' -U postgres
 
 script:
   - go test -coverprofile=coverage.txt -covermode count ./
